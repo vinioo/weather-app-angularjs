@@ -1,0 +1,18 @@
+<div class="card__container">
+    <div class="card__container__header">
+        <img src="{{$ctrl.iconUrl}}" alt="weather icon" class="card__container__header__icon"></img>
+    </div>
+    <div class="card__container__content">
+        <div class="card__container__content__temperatures">
+            <div>
+                <h1>{{$ctrl.min}}</h1>
+            </div>
+            <div>
+                <h3>{{$ctrl.max}}</h3>
+            </div>
+        </div>
+        <div class="card__container__content__day">
+            <h2>{{$ctrl.getWeekDayName()}}</h2>
+        </div>
+    </div>
+</div>

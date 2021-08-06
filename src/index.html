@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#32424a" />
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Nunito Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: linear-gradient(159deg, rgba(241, 246, 249, 1) 36%, rgba(219, 228, 255, 1) 100%);
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+                monospace;
+        }
+
+        html,
+        body,
+        #root {
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 120px;
+            height: 42px;
+            background: #2cc3d5;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            padding: 0px 8px;
+            box-shadow: 0 0 1pt 1pt #D3D3D3;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #23a0ad;
+        }
+
+        input {
+            width: 320px;
+            height: 42px;
+            background: white;
+            border: 2px solid #fafafa;
+            border-radius: 8px;
+            outline: none;
+            padding: 0px 8px;
+        }
+
+        input:focus {
+            /* border: 2px solid rgb(47, 195, 240); */
+            box-shadow: 0 0 5pt 2pt #D3D3D3;
+        }
+
+        input:hover {
+            box-shadow: 0 0 5pt 0.5pt #D3D3D3;
+        }
+
+        input::placeholder {
+            color: rgb(172, 172, 172);
+        }
+    </style>
+    <title>Weather</title>
+</head>
+
+<body role="document" ng-strict-di class="bp-ff-nunito bp-fs-5 bp-c-city fw3 h-100 w-100-ns">
+    <div class="wrapper flex w-100-ns h-100" ui-view></div>
+    <script src="//fast.appcues.com/39569.js"></script>
+</body>
+
+<toast></toast>
+
+</html>

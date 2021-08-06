@@ -1,0 +1,11 @@
+{
+    "presets": ["es2015"],
+    "plugins": [
+        "syntax-async-functions",
+        "dynamic-import-webpack",
+        "transform-class-properties",
+        "transform-regenerator",
+        "transform-object-rest-spread",
+        "transform-exponentiation-operator"
+    ]
+}

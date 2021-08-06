@@ -1,0 +1,14 @@
+<div class="home__container">
+    <div ng-if="$ctrl.isLoading" class="loading"></div>
+    <div class="home__container__header">
+        <weather-logo></weather-logo>
+    </div>
+    <div class="home__container__content__search">
+        <input placeholder="Digite o nome da cidade" ng-model="$ctrl.city"></input>
+        <button ng-click=$ctrl.handleSearch()>Pesquisar</button>
+    </div>
+    <div class="home__container__content__weather">
+        <weather-card ng-repeat="info in $ctrl.forecast" icon={{info.weather.icon}} max={{info.high_temp}} min={{info.low_temp}}
+            date={{info.datetime}}></weather-card>
+    </div>
+</div>
