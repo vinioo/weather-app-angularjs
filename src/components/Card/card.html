@@ -5,10 +5,10 @@
     <div class="card__container__content">
         <div class="card__container__content__temperatures">
             <div>
-                <h1>{{$ctrl.min}}</h1>
+                <h1>{{$ctrl.min | round}}</h1>
             </div>
             <div>
-                <h3>{{$ctrl.max}}</h3>
+                <h3>{{$ctrl.max | round}}</h3>
             </div>
         </div>
         <div class="card__container__content__day">

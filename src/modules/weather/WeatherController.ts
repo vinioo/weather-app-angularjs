@@ -3,7 +3,7 @@ import { WeatherService } from "services/weather.service";
 import { ITimeoutService } from "angular";
 
 class WeatherController {
-    public city: string;
+    public city: string = 'Belo Horizonte';
     public forecast;
     public isLoading: boolean;
 
@@ -18,11 +18,11 @@ class WeatherController {
         this.getForecast();
     }
 
-    public async getForecast(city: string = 'Belo Horizonte') {
+    public async getForecast() {
         try {
             this.isLoading = true;
             const { data: items } = await this.weatherService.getForecast(
-                city
+                this.city
             );
 
             this.$timeout(() => {
@@ -37,7 +37,7 @@ class WeatherController {
     }
 
     handleSearch() {
-        this.getForecast(this.city);
+        this.getForecast();
     }
 }
 

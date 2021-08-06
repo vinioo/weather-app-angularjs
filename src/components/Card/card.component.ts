@@ -43,10 +43,10 @@ export const WeatherCard = {
     controller: WeatherCardController,
     controllerAs: "$ctrl",
     bindings: {
-        min: "@?",
-        max: "@?",
-        date: "@?",
-        icon: "@?"
+        min: "@",
+        max: "@",
+        date: "@",
+        icon: "@"
     },
     transclude: false
 };

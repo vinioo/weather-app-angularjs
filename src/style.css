@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(
+        159deg,
+        rgba(241, 246, 249, 1) 36%,
+        rgba(219, 228, 255, 1) 100%
+    );
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    width: 120px;
+    height: 42px;
+    background: #2cc3d5;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    padding: 0px 8px;
+    box-shadow: 0 0 1pt 1pt #d3d3d3;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #23a0ad;
+}
+
+input {
+    width: 320px;
+    height: 42px;
+    background: white;
+    border: 2px solid #fafafa;
+    border-radius: 8px;
+    outline: none;
+    padding: 0px 8px;
+}
+
+input:focus {
+    box-shadow: 0 0 5pt 2pt #d3d3d3;
+}
+
+input:hover {
+    box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+}
+
+input::placeholder {
+    color: rgb(172, 172, 172);
+}
+
+.view {
+    height: 100%;
+}

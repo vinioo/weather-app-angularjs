@@ -5,6 +5,7 @@
 import 'babel-polyfill';
 import * as angular from 'angular';
 import { appStatesModules } from 'app.states';
+import './style.css';
 
 // bootstrap angular application
 angular.element(document).ready(() => {
