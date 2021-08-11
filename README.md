@@ -30,7 +30,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/vinioo/weather-app-angularjs
    ```
 2. Install NPM packages
    ```sh
